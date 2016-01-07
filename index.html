@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript">
+        WebFontConfig = {
+          google: { families: [ 'Orbitron::latin' ] }
+        };
+        (function() {
+          var wf = document.createElement('script');
+          wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+          wf.type = 'text/javascript';
+          wf.async = 'true';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(wf, s);
+        })(); </script>
+    <title>Mars Lander</title>
+  </head>
+  <body>
+    <canvas id="game" width="1000" height="800"></canvas>
+    <script src="./lib/stars.js"></script>
+    <script src="./lib/mars.js"></script>
+    <script src="./lib/platforms.js"></script>
+    <script src="./lib/spaceship.js"></script>
+    <script src="./lib/game.js"></script>
+  </body>
+</html>
