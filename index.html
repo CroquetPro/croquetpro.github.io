@@ -1,48 +1,178 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <script type="text/javascript">
-        WebFontConfig = {
-          google: { families: [ 'Orbitron::latin' ] }
-        };
-        (function() {
-          var wf = document.createElement('script');
-          wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-          wf.type = 'text/javascript';
-          wf.async = 'true';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(wf, s);
-        })(); </script>
-    <title>Mars Lander</title>
+	<head>
+		<title>Ben Rothman / Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
-    <link rel="prefetch" href="./assets/thrust.mp3">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="./assets/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./assets/favicons/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="./assets/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="./assets/favicons/manifest.json">
-    <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="./assets/favicons/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>
-    <canvas id="game" width="1000" height="700"></canvas>
-    <script src="./lib/stars.js"></script>
-    <script src="./lib/mars.js"></script>
-    <script src="./lib/platforms.js"></script>
-    <script src="./lib/spaceship.js"></script>
-    <script src="./lib/game.js"></script>
-  </body>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1>Ben Rothman</h1>
+						<nav>
+							<h1>Software Engineer / Web Developer</h1>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<!-- <nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="social.html">Social</a></li>
+								<li><a href="resume.html">Resume</a></li>
+								<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav> -->
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-cubes"></span></div>
+							<h2>Ben Rothman</h2>
+							<p>Software Engineer / Web Developer</p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="http://filmnovice.xyz" class="image"><img src="images/slate.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Film Novice</h2>
+										<p>Film review website inspired by Rap Genius.<br/>Full-Stack Ruby on Rails web app using React.js. </p>
+										<a href="http://filmnovice.xyz" class="special">Visit</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="Marslander" class="image"><img src="images/mars.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Mars Lander</h2>
+										<p>Javascript game inspired by Lunar Lander made with HTML5 Canvas.</p>
+										<a href="Marslander" class="special">Live Demo</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="https://github.com/CroquetPro/ActiveRecordLite" class="image"><img src="images/ruby.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Active Record Lite</h2>
+										<p>An Object Relational Mapping framework inspired by the functionality of Active Record.<br/>Made using Ruby and SQL.</p>
+										<a href="https://github.com/CroquetPro/ActiveRecordLite" class="special">See the Code</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">About Me</h2>
+									<p>Here are some helpful links.</p>
+									<section class="features">
+										<article>
+											<a href="https://github.com/CroquetPro" class="image"><img src="images/github.png" alt="" /></a>
+											<h3 class="major">GitHub</h3>
+											<p>An extensive record of my coding journey.</p>
+											<a href="https://github.com/CroquetPro" class="special">Visit My GitHub</a>
+										</article>
+										<article>
+											<a href="https://www.linkedin.com/in/croquetpro" class="image"><img src="images/linkedin.png" alt="" /></a>
+											<h3 class="major">LinkedIn Profile</h3>
+											<p>See more about my education and skills.</p>
+											<a href="https://www.linkedin.com/in/croquetpro" class="special">See my Page</a>
+										</article>
+										<article>
+											<a href="/resume.html" class="image"><img src="images/resume.png" alt="" /></a>
+											<h3 class="major">Resume</h3>
+											<p>Most of what you need to know.</p>
+											<a href="images/BenRothmanResume.pdf" download class="special download fa-download">Download PDF</a >
+										</article>
+
+									</section>
+									<!-- <ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul> -->
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<!-- <p>Please feel free to leave me a message.</p>
+							<form method="post" action="#">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form> -->
+							<div class="contact">
+								<span class="fa-envelope"><a href="mailto:CroquetPro@Gmail.com">CroquetPro@Gmail.com</a></span>
+								<span class="fa-home">
+									Ben Rothman<br />
+									1521 3rd Ave. #306<br />
+									Oakland, CA 94606
+								</span>
+								<span class="fa-phone">(925) 212-2593</span>
+								<!-- <li class="fa-github"><a href="https://github.com/CroquetPro">GitHub.com/CroquetPro</a></li>
+								<li class="fa-linkedin"><a href="https://www.linkedin.com/in/croquetpro">LinkedIn.com/in/CroquetPro</a></li> -->
+							</div>
+							<ul class="copyright">
+								<li>&copy; All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
